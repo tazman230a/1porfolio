@@ -1,19 +1,24 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Playfair, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 
-const jetbrainsMono = JetBrains_Mono({
+const fontSans = Playfair({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-  variable: '--font-jetbrainsMono'
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-sans",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "Michael",
-  description: "Michael Portfolio",
+  title: "Tax Methods Company",
+  description: "Tax Company",
 };
 
 export default function RootLayout({
@@ -23,12 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={jetbrainsMono.variable}>
+      <body
+        className={`${fontSans.variable} ${geistMono.variable} antialiased`}
+      >
         <Header />
         <StairTransition />
-        <PageTransition>
-          {children}
-        </PageTransition>
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
