@@ -7,11 +7,17 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-12 text-white">
+    <header className="py-8 xl:py-6 text-white border-b-2">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/" className="flex">
-          <Image src="/assets/logo.svg" alt="logo" width={50} height={50} />
+          <Image 
+            src="/assets/logo1.svg" 
+            alt="logo" 
+            width={50} 
+            height={50} 
+            
+          />
           <p className="px-3">
             <span className="text-red-600">T</span>ax{" "}
              <span className="text-red-600">M</span>ethods<br />

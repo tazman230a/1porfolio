@@ -55,24 +55,27 @@ const Services = () => {
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
+      <h1 className="text-center text-6xl text-[#93d8bc] pb-7">
+        Some of Our Services
+      </h1>
+      <div className="border-b-2 mb-7 " />
       <div className="container mx-auto ">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
-              
               {/* project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
-             
+
               {/* border */}
               <div className="border border-white/20"></div>
               {/* button */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                
+
                 {/* github project button */}
               </div>
             </div>

@@ -39,6 +39,8 @@ const contact = () => {
       }}
       className="py-6"
     >
+      <h1 className="text-center text-6xl pb-7 text-[#93d8bc]  pt-2">Contact Us</h1>
+      <div className="border-b-2 mb-10" />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px] ">
           {/* form */}

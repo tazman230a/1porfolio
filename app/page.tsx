@@ -1,9 +1,6 @@
 
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
-import Stats from "@/components/Stats";
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
   return (
@@ -15,7 +12,7 @@ export default function Home() {
             <span className="text-xl">Tax Accountant</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br />{" "}
-              <span className="text-accent">M. Fred Minter</span>
+              <span className="text-accent">Mr. Fred Minter</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
               Specialize in helping small businesses with tax and financial
