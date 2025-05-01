@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="py-8 xl:py-6 text-white border-b-2">
+    <header className="py-3 xl:py-6 text-white border-b-2">
       <div className="container mx-auto flex justify-between items-center">
         {/* logo */}
         <Link href="/" className="flex">

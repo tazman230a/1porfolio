@@ -2,38 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { navLinks } from "@/constants";
 
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "about",
-    path: "/about",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
+
 
 const Nav = () => {
     const pathname = usePathname();
 
   return (
     <nav className="flex gap-8">
-      {links.map((link, index) => {
+      {navLinks.map((navLink, index) => {
         return (
             <Link 
-                href={link.path} 
+                href={navLink.path} 
                 key={index} 
-                className={`${link.path === pathname && "text-accent border-b-2 border-accent"} capitalize font-medium hover:text-accent transition-all` }>
-                  {link.name}
+                className={`${navLink.path === pathname && "text-accent border-b-2 border-accent"} capitalize font-semibold text-xl ml-11 hover:text-accent transition-all` }>
+                  {navLink.name}
             </Link>
         )
       })}

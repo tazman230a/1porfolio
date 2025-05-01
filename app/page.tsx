@@ -24,10 +24,7 @@ export default function Home() {
             {/* button & socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <div className="mb-8 xl:mb-8">
-                <Social
-                  containerStyles="flex gap-6"
-                  iconsStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
-                />
+                <Social />
               </div>
             </div>
           </div>

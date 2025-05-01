@@ -34,7 +34,7 @@ const projects = [
 ];
 
 const Services = () => {
-  const [project, setProject] = useState(projects[0]);
+  const [project] = useState(projects[0]);
   
   return (
     <motion.section
@@ -58,14 +58,12 @@ const Services = () => {
               </h2>
               {/* project description */}
               <p className="text-white/60">{project.description}</p>
-
+              
               {/* border */}
               <div className="border border-white/20"></div>
               {/* button */}
               <div className="flex items-center gap-4">
-                {/* live project button */}
-
-                {/* github project button */}
+               
               </div>
             </div>
           </div>
@@ -97,10 +95,7 @@ const Services = () => {
                 );
               })}
               {/* slider buttons */}
-              <WorkSliderBtns
-                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none "
-                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all "
-              />
+              <WorkSliderBtns />
             </Swiper>
           </div>
         </div>

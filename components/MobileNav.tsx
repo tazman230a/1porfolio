@@ -5,29 +5,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
 import Image from "next/image";
+import { navLinks } from "@/constants";
 
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  { 
-    name: "about",
-    path: "/about",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "work",
-    path: "/work",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
 
 const MobileNav = () => {
     const pathname = usePathname();
@@ -38,18 +17,16 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-accent" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className="mt-32 mb-40 text-center text-2xl">
-          <Link href="/">
-            <Image src="/assets/logo.svg" alt="logo" height={35} width={35} />
-            <p>
+        <div className="flex mt-6 mb-10 text-2xl"> 
+            <Image src="/assets/logo1.svg" alt="logo" height={45} width={50} className="pr-3" />
+            <p className="text-white text-sm">
               <span className="text-red-600">T</span>ax
               <span className="text-red-600">M</span>ethods <br />
               <span className="text-red-600">C</span>ompany A.T.C.
             </p>
-          </Link>
         </div>
-        <nav className="flex flex-col justify-center items-center gap-8">
-          {links.map((link, index) => {
+        <nav className="flex flex-col justify-center items-center gap-7">
+          {navLinks.map((link, index) => {
             return (
               <Link
                 href={link.path}
