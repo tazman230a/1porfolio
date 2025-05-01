@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
-import path from "path";
+
 
 const PageTransition = ({children}) => {
   const pathname = usePathname();
