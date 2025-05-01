@@ -35,13 +35,6 @@ const projects = [
 
 const Services = () => {
   const [project, setProject] = useState(projects[0]);
-
-  const handleSlideChange = (swiper) => {
-    // get current slide index
-    const currentIndex = swiper.activeIndex;
-    // update project state based on current slide index
-    setProject(projects[currentIndex])
-  };
   
   return (
     <motion.section
@@ -81,7 +74,8 @@ const Services = () => {
               spaceBetween={30}
               slidesPerView={1}
               className="xl:h-[520px] mb-12"
-              onSlideChange={handleSlideChange}
+              onSlideChange={() => console.log('slide change')}
+              onSwiper={(swiper) => console.log(swiper)}
             >
               {projects.map((project, index) => {
                 return (
