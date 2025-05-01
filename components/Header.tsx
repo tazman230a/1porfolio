@@ -14,14 +14,14 @@ const Header = () => {
           <Image 
             src="/assets/logo1.svg" 
             alt="logo" 
-            width={50} 
+            width={60} 
             height={50} 
             
           />
           <p className="px-3">
-            <span className="text-red-600">T</span>ax{" "}
-             <span className="text-red-600">M</span>ethods<br />
-            <span className="text-red-600">C</span>ompany A.T.C.
+            <span className="text-red-500">T</span>ax{" "}
+             <span className="text-red-500">M</span>ethods<br />
+            <span className="text-red-500">C</span>ompany A.T.C.
           </p>
         </Link>
         {/* desktop nav & hire me button */}

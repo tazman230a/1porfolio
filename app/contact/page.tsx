@@ -14,7 +14,12 @@ const info = [
     description: "(323) 291 2566",
   },
   {
-    icon: <FaEnvelope/>,
+    icon: <FaPhoneAlt />,
+    title: "Cell Phone",
+    description: "(310) 266 6415",
+  },
+  {
+    icon: <FaEnvelope />,
     title: "Email",
     description: "dembali@aol.com",
   },
@@ -39,7 +44,9 @@ const contact = () => {
       }}
       className="py-6"
     >
-      <h1 className="text-center text-6xl pb-7 text-[#93d8bc]  pt-2">Contact Us</h1>
+      <h1 className="text-center text-6xl pb-7 text-[#93d8bc]  pt-2">
+        Contact Us
+      </h1>
       <div className="border-b-2 mb-10" />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px] ">
@@ -48,8 +55,7 @@ const contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl ">
               <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                nihil sapiente pariatur id totam.
+                We are looking forward to working with you.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -66,9 +72,12 @@ const contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="est">Small Business Service</SelectItem>
+                    <SelectItem value="cst">Financial Reporting</SelectItem>
+                    <SelectItem value="dst">SBA Loans</SelectItem>
+                    <SelectItem value="bst">Incorporations</SelectItem>
+                    <SelectItem value="gst">LLC&apos;s</SelectItem>
+                    <SelectItem value="ast">Audits</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
