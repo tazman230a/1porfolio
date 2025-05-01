@@ -40,8 +40,7 @@ const About = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
-        <h1 className="text-center text-6xl text-[#93d8bc] pb-6">About Us</h1>
-        <div className="border-b-2 pb-5" />
+        <h1 className="text-center text-6xl text-[#93d8bc] pb-6 pt-7">About Us</h1>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
