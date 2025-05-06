@@ -47,3 +47,31 @@ export const services = [
         href: "",
     },
 ];
+
+export const projects = [
+  {
+   
+    category: "Small Business Services",
+    description:
+     "Specialize in helping small businesses with tax and financial needs. I am an enrolled agent authorized to practice before the IRS. Extensive background in credit, financing and business turnaround situations. Overall been doing this type of work over 40 years.r adipisicing elit. Cupiditate magnam modi.",
+    stack: [{ name: "Business License"}, { name: "LLC's"}, {name: "Registered Agent" }],
+    image: "/assets/incorporation.png", 
+  },
+  {
+   
+    category: "financial reporting",
+    title: "Financial Reporting",
+    description:
+      "in any type of reporting, you always need to QA. I don't take it for granted that we have greater output, and more accurate end results. We always have checks and balances in place.",
+      stack: [{ name: "FP & A Services"}, ],
+    image: "/assets/financial1.png",
+  },
+  {
+   
+    category: "sba loans",
+    title: "SBA Loan",
+    description: "What type of loan are you looking for?",
+    stack: [{ name: "SBA Loan Options"}, { name: "ow to get a SBA Loan"},],
+    image: "/assets/sba.png",
+  },
+];
