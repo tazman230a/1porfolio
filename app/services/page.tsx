@@ -2,11 +2,8 @@
 
 import { motion } from "framer-motion"
 import React,{ useState }  from "react"
-import { BsArrowUpRight, BsGithub } from "react-icons/bs"
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger  } from "@/components/ui/tooltip"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
-import Link from "next/link"
 import Image from "next/image"
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 import { projects } from "@/constants"
@@ -17,6 +14,7 @@ const service = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [project, setProject] = useState(projects[0]);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleSlideChange = (swiper: { activeIndex: any }) => {
     // get current slide index
     const currentIndex = swiper.activeIndex;
