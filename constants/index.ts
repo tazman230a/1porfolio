@@ -34,7 +34,7 @@ export const services = [
     },
     {
         num: "03",
-        title: "llc's",
+        title: "LLC's",
         description:
             "Find out what an LLC is and learn why so many businesses choose to structure themselves that way.",
         href: "",
@@ -71,7 +71,7 @@ export const projects = [
     category: "sba loans",
     title: "SBA Loan",
     description: "What type of loan are you looking for?",
-    stack: [{ name: "SBA Loan Options"}, { name: "ow to get a SBA Loan"},],
+    stack: [{ name: "SBA Loan Options"}, { name: "How to get a SBA Loan"},],
     image: "/assets/sba.png",
   },
 ];
